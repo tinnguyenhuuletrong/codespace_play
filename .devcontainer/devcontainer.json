@@ -1,19 +1,19 @@
 {
 	"image": "mcr.microsoft.com/devcontainers/universal:2",
-	// "features": {
-	// 	"ghcr.io/devcontainer-community/devcontainer-features/bun.sh:1": {},
-	// 	"ghcr.io/devcontainers-extra/features/cloudflared:1": {}
-	// },
-	// "customizations": {
-	// 	"vscode": {
-	// 		"extensions": [
-	// 			"oven.bun-vscode",
-	// 			"esbenp.prettier-vscode"
-	// 		]
-	// 	}
-	// },
+	"features": {
+		"ghcr.io/devcontainer-community/devcontainer-features/bun.sh:1": {},
+		"ghcr.io/devcontainers-extra/features/cloudflared:1": {}
+	},
+	"customizations": {
+		"vscode": {
+			"extensions": [
+				"oven.bun-vscode",
+				"esbenp.prettier-vscode"
+			]
+		}
+	},
 	"onCreateCommand": "mkdir -p /workspaces/secrets",
 	"postCreateCommand": {
-		"mountSecret": "echo $SAMPLE_SA_JSON > /workspaces/secrets/sample_sa_secret.json && unset SAMPLE_SA_JSON"
+		"mountSecret": "echo $SAMPLE_SA_JSON > /workspaces/secrets/sample_sa_secret.json"
 	}
 }
