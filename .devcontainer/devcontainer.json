@@ -1,7 +1,7 @@
 {
 	"image": "mcr.microsoft.com/devcontainers/universal:2",
 	"features": {
-		"ghcr.io/shyim/devcontainers-features/bun:0": {},
+		"ghcr.io/devcontainer-community/devcontainer-features/bun.sh:1": {},
 		"ghcr.io/devcontainers-extra/features/cloudflared:1": {}
 	}
 }
