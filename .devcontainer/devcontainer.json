@@ -12,7 +12,7 @@
 	// 		]
 	// 	}
 	// },
-	"postCreateCommand": "mkdir -p /workspaces/secrets",
+	"onCreateCommand": "mkdir -p /workspaces/secrets",
 	"postCreateCommand": {
 		"mountSecret": "echo $SAMPLE_SA_JSON > /workspaces/secrets/sample_sa_secret.json && unset SAMPLE_SA_JSON"
 	}
