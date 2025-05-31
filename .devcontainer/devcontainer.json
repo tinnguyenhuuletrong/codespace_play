@@ -12,10 +12,8 @@
 	// 		]
 	// 	}
 	// },
-	"postCreateCommand": [
-		"mkdir -p /workspaces/secrets",
-		// Mount secret -> file. then unset env
-		"echo $SAMPLE_SA_JSON > /workspaces/secrets/sample_sa_secret.json && unset SAMPLE_SA_JSON",
-		"ls -la /workspaces/secrets" // To verify in the creation log
-	]
+	"postCreateCommand": "mkdir -p /workspaces/secrets",
+	"postCreateCommand": {
+		"mountSecret": "echo $SAMPLE_SA_JSON > /workspaces/secrets/sample_sa_secret.json && unset SAMPLE_SA_JSON"
+	}
 }
