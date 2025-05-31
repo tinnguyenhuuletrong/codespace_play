@@ -3,5 +3,13 @@
 	"features": {
 		"ghcr.io/devcontainer-community/devcontainer-features/bun.sh:1": {},
 		"ghcr.io/devcontainers-extra/features/cloudflared:1": {}
+	},
+	"customizations": {
+		"vscode": {
+			"extensions": [
+				"oven.bun-vscode",
+				"esbenp.prettier-vscode"
+			]
+		}
 	}
 }
